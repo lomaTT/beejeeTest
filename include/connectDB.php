@@ -1,6 +1,6 @@
 <?php
 
-    $connect = mysqli_connect('127.0.0.1', 'lomatt', 'Lomatt321', 'lomatt');
+    $connect = mysqli_connect('localhost', 'root', '', 'beejeeTest');
 
     if (mysqli_connect_errno())
     {
