@@ -48,7 +48,7 @@
     $all_tasks = mysqli_query($connect, "SELECT * FROM `task_list`");
     $rows = mysqli_num_rows($all_tasks);
     
-    if ($rows % 3 != 0) $max_pages = intdiv($rows, 3) + 1;
+    if ($rows % 3 != 0) $max_pages = floor($rows / 3) + 1;
     else $max_pages = $rows / 3;
     ?>
 
